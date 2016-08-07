@@ -4,9 +4,20 @@
   <title>DemoApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   <%= javascript_include_tag 'jquery-2.2.0.min.js' %>
+	<%= javascript_include_tag 'handlebars-v4.0.5.js' %>
+	<%= javascript_include_tag 'bootstrap-datepicker.js' %>
+	<%= javascript_include_tag 'chosen_v1.5.0/chosen.jquery.min.js' %>
+	<%= stylesheet_link_tag 'chosen.min.css' %>
+	<%= stylesheet_link_tag 'bootstrap.min' %>
+<%= javascript_include_tag 'bootstrap.min.js' %>
+	   
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
 
 <%= yield %>
 
