@@ -1,0 +1,11 @@
+.form-inline{
+  padding-top: 20px;
+}
+
+.header{
+  position: relative;
+  top:-62px;
+  background-color: #7ab;
+  min-height: 90px;
+  color: white;  
+}
