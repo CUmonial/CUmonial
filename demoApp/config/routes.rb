@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'landings/index'
+  root :to=> "landings#index"
   devise_for :app_users, controllers: { sessions: 'app_users/sessions',confirmations: 'app_users/confirmations',mailer: 'app_users/mailer',passwords: 'app_users/passwords',registrations: 'app_users/registrations',shared: 'app_users/shared', unlock: 'app_users/unlock'} 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
