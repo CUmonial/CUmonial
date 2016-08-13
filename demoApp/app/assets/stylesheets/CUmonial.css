@@ -9,7 +9,56 @@
 
 .header{
   position: relative;
-  background-color: #7ab;
+  background-color: darkslategrey;
   min-height: 90px;
   color: white;  
+}
+.main-signup{
+ 	margin-top: 40px;
+}
+.form-group{
+	margin-bottom: 15px;
+}
+
+
+
+.main-login{
+ 	background-color: #efefef;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+ 	margin-top: 10px;
+ 	margin: 0 auto;
+ 	max-width: 380px;
+    padding: 10px 40px;
+ 	padding-top: 5px;
+
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+.register-header{
+	margin-bottom: 20px;
+	font-weight: 20px;
+}
+.grey-text{
+	color: grey;
+}
+.center-text{
+	text-align: center;
 }

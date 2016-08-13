@@ -1,29 +1,54 @@
-<h2>Sign up</h2>
+<style type="text/css">
+.sign-up-wrapper{
+  background-image: url(images/content_network.jpg)
+}
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+</style>
+<div class="container">
+  <div class="row main-signup">
+  <div class="main-login main-center">
+        <div class="register-header center-text">
+        <h3>Join Professional network</h3>
+        <h4>Register with us, free</h4>
+        </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name),:html=>{:class=>"form-horizontal"}) do |f| %>
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <%= f.text_field :user_name,:placeholder=>"Name",:class=>"form-control", autofocus: true %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <%= f.email_field :email,:placeholder=>"Email",:class=>"form-control", autofocus: true %>       
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <%= f.password_field :password,:placeholder=>"Password",:class=>"form-control",autocomplete: "off" %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <%= f.password_field :password_confirmation,:placeholder=>"Confirm password",:class=>"form-control", autocomplete: "off" %>
+        </div>
+      </div>
+
+      <div class="form-group terms-and-conditions">
+        <p class="grey-text center-text">By clicking join now, you agree to CUmonial's <a href="#">User agreement</a> and <a href="#" >Cookie policy</a> </p>
+      </div>
+
+      <div class="form-group ">
+              <%= f.submit "Join now",:class=>"btn btn-primary btn-lg btn-block" %>
+      </div>
+        <% end %>
   </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
   </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
