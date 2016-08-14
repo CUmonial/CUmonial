@@ -22,6 +22,11 @@ class DeviseCreateAppUsers < ActiveRecord::Migration
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
 
+      #Relation between other tables
+      t.integer  :user_type_id,     null: false
+      t.integer  :user_category_id, null: false
+      
+
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
