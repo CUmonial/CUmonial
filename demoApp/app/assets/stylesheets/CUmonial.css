@@ -23,7 +23,7 @@
 
 
 .main-login{
- 	background-color: #efefef;
+ 	background-color: #dde;
     /* shadows and rounded borders */
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -37,7 +37,7 @@
 .main-center{
  	margin-top: 10px;
  	margin: 0 auto;
- 	max-width: 380px;
+ 	max-width: 400px;
     padding: 10px 40px;
  	padding-top: 5px;
 
