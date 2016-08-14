@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20160814164415) do
 
   create_table "app_modules", force: :cascade do |t|
-    t.string   "name",       limit: 255
+    t.string   "name",       limit: 255, null: false
     t.string   "label",      limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
@@ -47,12 +47,9 @@ ActiveRecord::Schema.define(version: 20160814164415) do
   add_index "app_users", ["user_type_id"], name: "fk_rails_2feb952136", using: :btree
 
   create_table "user_categories", force: :cascade do |t|
-    t.string   "name",         limit: 255
+    t.string   "name",         limit: 255, null: false
     t.string   "description",  limit: 255
     t.integer  "user_type_id", limit: 4
-    t.date     "start_time"
-    t.date     "end_time"
-    t.boolean  "is_active"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end

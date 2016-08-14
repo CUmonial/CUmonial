@@ -1,12 +1,9 @@
 class CreateUserCategories < ActiveRecord::Migration
   def up
     create_table :user_categories do |t|
-      t.string :name
+      t.string :name,       null: false
       t.string :description
       t.integer :user_type_id
-      t.date :start_time
-      t.date :end_time
-      t.boolean :is_active
       t.timestamps null: false
     end
 
