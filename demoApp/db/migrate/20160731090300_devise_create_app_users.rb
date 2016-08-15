@@ -23,8 +23,8 @@ class DeviseCreateAppUsers < ActiveRecord::Migration
       t.string   :last_sign_in_ip
 
       #Relation between other tables
-      t.integer  :user_type_id,     null: false
-      t.integer  :user_category_id, null: false
+      t.integer  :user_type_id
+      t.integer  :user_category_id
       
 
       ## Confirmable

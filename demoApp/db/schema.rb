@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 20160814164415) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
-    t.integer  "user_type_id",           limit: 4,                null: false
-    t.integer  "user_category_id",       limit: 4,                null: false
+    t.integer  "user_type_id",           limit: 4
+    t.integer  "user_category_id",       limit: 4
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
   end
